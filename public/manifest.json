@@ -1,0 +1,27 @@
+{
+	"manifest_version":2,
+
+	"name":"Presently",
+
+	"description":"My first chrome extension",
+
+	"version":"0.1",
+
+	"permissions":[
+
+		"http://api.wunderground.com/api/",
+		"http://autocomplete.wunderground.com/api"
+	],
+
+	"background": {
+
+    	"scripts": ["./js/vendors/angular.min.js"]
+  	},
+
+  	"content_security_policy": "script-src 'self'; object-src 'self'",
+
+  	"chrome_url_overrides" : {
+
+    	"newtab": "tab.html"
+  	}
+}
