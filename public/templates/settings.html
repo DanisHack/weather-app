@@ -1,0 +1,27 @@
+<h2>Settings</h2>
+
+<form ng-submit="save()">
+
+  <input type="text"
+      ng-model="user.location"
+    	auto-fill="fetchCities"
+    	autocomplete="off"
+    	placeholder="Location" />
+
+
+  <input class="btn btn-primary" 
+        type="submit" value="Save" />
+
+</form>
+
+<div id="actionbar">
+
+    <ul class="list-inline">
+
+      <li><a class="glyphicon glyphicon-home" href="#/"></a></li>
+
+      <li><a class="glyphicon glyphicon-cog" href="#/settings"></a></li>
+
+    </ul>
+
+  </div>
